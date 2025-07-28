@@ -1,0 +1,18 @@
+clone repository
+git clone git@github.com:USER-NAME/REPOSITORY-NAME.git
+
+git pull 
+    updates local files
+
+git add . 
+    adds all files in cd to staging
+
+git commit -m "message"
+
+git push to update
+
+git status
+    view staging and commits
+
+git log
+    views changes
