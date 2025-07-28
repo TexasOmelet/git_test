@@ -16,3 +16,5 @@ git status
 
 git log
     views changes
+    q to escape
+    
