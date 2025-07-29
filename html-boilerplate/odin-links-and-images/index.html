@@ -3,24 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Homepage</title>
 </head>
 <body>
-    <h1>Homepage</h1>
+    <h1>Homepage</h1><p></p>
+    <h2>Empty Link</h2>
     <!-- Link <a> -->
     <a>About the Odin Project</a><p></p>
 
+    <h2>Absolute Link, same tab, missing target="_blank"</h2>
     <!-- Open link on same tab <a href="(link)"> -->
     <a href="https://www.theodinproject.com/about">About the Odin Project</a><p></p>
 
+    <h2>Absolute Link, new tab, added security</h2>
     <!-- Open link with target <a href="(link)" target="(destination)" rel="(relation)">-->
         <!-- target="_self" opens on same tab, same if omitted-->
         <!-- target="_blank" opens on different tab-->
     <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">About The Odin Project</a><p></p>
     
+    <h2>noopener security</h2>
     <!-- rel="noopener" security feature, ensures original page can't be manipulated using js-->
     <a href="https://example.com" target="_blank" rel="noopener">Open Example</a><p></p>
+
+    <h2>noreferrer security</h2>
     <!-- rel="noreferrer" security feature, hides user -->
     <a href="https://example.com" target="_blank" rel="noreferrer">Visit Example</a><p></p>
+
+    <h2>Absolute link to TOP</h2>
+    <!-- Absolute links to another website -->
+        <!-- sheme://domain/path -->
+    <!-- Relative links to other pages on own website -->
+    <a href="https://www.theodinproject.com/about">About The Odin Project</a><p></p>
+
+    <!-- Relative link -->
+    <h2>Relative link to about.html</h2>
+        <!-- Make sure directory starts with ./abc/efg.html -->
+    <a href="./pages/about.html">About</a><p></p>
 </body>
 </html>
